@@ -25,7 +25,6 @@ public class Restaurant {
             flag = true;
         }
 
-
         return flag;
 
     }
