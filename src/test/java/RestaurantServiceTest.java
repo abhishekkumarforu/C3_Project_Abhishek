@@ -34,7 +34,6 @@ class RestaurantServiceTest {
 
         assertNotNull(matchRestaurantResult,"Restaurant Found");
 
-
     }
 
 
@@ -46,8 +45,6 @@ class RestaurantServiceTest {
 
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
 
 
     //>>>>>>>>>>>>>>>>>>>>>>ADMIN: ADDING & REMOVING RESTAURANTS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

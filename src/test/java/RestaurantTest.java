@@ -22,7 +22,7 @@ void BeforeEach() {
     restaurant.addToMenu("Vegetable lasagne", 269);
 }
     //>>>>>>>>>>>>>>>>>>>>>>>>>OPEN/CLOSED<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-    //-------FOR THE 2 TESTS BELOW, YOU MAY USE THE CONCEPT OF MOCKING, IF YOU RUN INTO ANY TROUBLE
+
     @Test
     public void is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time(){
 
@@ -76,7 +76,6 @@ void BeforeEach() {
     }
     @Test
     public void removing_item_that_does_not_exist_should_throw_exception() {
-
 
 
         assertThrows(itemNotFoundException.class,

@@ -33,7 +33,6 @@ public class Restaurant {
 
     public List<Item> getMenu() {
         return menu;
-
     }
 
     private Item findItemByName(String itemName){
