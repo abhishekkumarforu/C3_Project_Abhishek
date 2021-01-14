@@ -5,23 +5,24 @@ import java.util.List;
 public class RestaurantService {
     private static List<Restaurant> restaurants = new ArrayList<>();
 
-    public static Restaurant findRestaurantByName(String restaurantName){
+    public static Restaurant findRestaurantByName(String restaurantName) throws restaurantNotFoundException {
 
-        Restaurant matchRestaurant = null;
 
-        for (Restaurant restaurant : restaurants){
+        for (Restaurant restaurant : restaurants) {
 
-            String name = restaurant.getName();
-            if (name.contains(restaurantName)){
-                matchRestaurant = restaurant ;
-                break ;
+            if (restaurant.getName().equals(restaurantName)) {
+
+                return restaurant;
             }
+
+            else {
+                throw new restaurantNotFoundException(restaurantName);
+            }
+
         }
 
-        return matchRestaurant ;
-
+        return null;
     }
-
 
     public Restaurant addRestaurant(String name, String location, LocalTime openingTime, LocalTime closingTime) {
         Restaurant newRestaurant = new Restaurant(name, location, openingTime, closingTime);
